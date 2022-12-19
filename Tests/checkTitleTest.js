@@ -15,6 +15,7 @@ var checkTitle = async function(capabilities) {
       // navigate to home page
       await driver.get("https://nhl.com/");
 
+      // validate page title
       var desiredTitle = "Official Site of the National Hockey League | NHL.com";
       var actualTitle = await driver.getTitle();
 
@@ -33,7 +34,7 @@ var checkTitle = async function(capabilities) {
     }
   
   await driver.quit();
-  console.log("checkTitle Test completed");
+  console.log("Check Title Test Completed");
 }
 
 module.exports = checkTitle;
