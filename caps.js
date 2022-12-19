@@ -1,6 +1,6 @@
-// var username = process.env.BROWSERSTACK_USERNAME;
-// var accessKey = process.env.BROWSERSTACK_ACCESS_KEY;
-// var buildName = process.env.JENKINS_LABEL;
+var username = process.env.BROWSERSTACK_USERNAME;
+var accessKey = process.env.BROWSERSTACK_ACCESS_KEY;
+var buildName = process.env.JENKINS_LABEL;
 
 const username = 'nicholas.bonofiglio@gmail.com';
 const accesskey = 'L247vKKyeqwMA1GfL9v6';
@@ -11,7 +11,7 @@ const caps = [
       "os": "Windows",
       "osVersion": "10",
       "browserVersion": "latest",
-      "buildName" : "browserstack-build-1",
+      "buildName" : buildName,
       "sessionName" : "Windows 10 - Firefox",
       "userName" : username,
       "accessKey" : accesskey,
@@ -23,7 +23,7 @@ const caps = [
       "os": "Windows",
       "osVersion": "11",
       "browserVersion": "latest",
-      "buildName" : "browserstack-build-1",
+      "buildName" : buildName,
       "sessionName" : "Windows 11 - Chrome",
       "userName" : username,
       "accessKey" : accesskey,
@@ -35,7 +35,7 @@ const caps = [
       "os": "OS X",
       "osVersion": "Ventura",
       "browserVersion": "latest",
-      "buildName" : "browserstack-build-1",
+      "buildName" : buildName,
       "sessionName" : "MacOS Ventura - Chrome",
       debug: 'true', 
       networkLogs: 'true', 
@@ -50,7 +50,7 @@ const caps = [
         "os": "OS X",
         "osVersion": "Ventura",
         "browserVersion": "latest",
-        "buildName" : "browserstack-build-1",
+        "buildName" : buildName,
         "sessionName" : "MacOS Ventura - Firefox",
         "userName" : username,
         "accessKey" : accesskey,
@@ -62,7 +62,7 @@ const caps = [
         "os": "OS X",
         "osVersion": "Ventura",
         "browserVersion": "latest",
-        "buildName" : "browserstack-build-1",
+        "buildName" : buildName,
         "sessionName" : "MacOS Ventura - Safari",
         "userName" : username,
         "accessKey" : accesskey,
