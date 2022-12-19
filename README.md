@@ -23,6 +23,7 @@ For this exercise, I have chosen the following tech stack:
 In order to run the sample suite, a user must do the following:
 - Install Jenkins
 - Install Node.js plugin for Jenkins
-- Connect job to pull from public GitHub repository located at: https://github.com/nbonofiglio/bstack_challenge
-- From GitHub repo, copy Jenkins job file to create new Pipeline job in Jenkins
+- Configure NodeJS Plugin in Jenkins Global Configuration settings to install NodeJS 19.3.0 from Nodejs.org
+- Copy Jenkins job file to create new Pipeline job in Jenkins
 - Update BrowserStack credentials ID in pipeline
+- Run Jenkins Job

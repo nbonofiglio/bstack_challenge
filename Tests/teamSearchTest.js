@@ -4,7 +4,7 @@ const caps = require('../caps');
 var teamSearch = async function(capabilities) {
 
   let driver = new webdriver.Builder()
-    .usingServer('http://nickbonofiglio_G13ade:L247vKKyeqwMA1GfL9v6@hub-cloud.browserstack.com/wd/hub')
+    .usingServer('https://hub-cloud.browserstack.com/wd/hub')
     .withCapabilities({
       ...capabilities,
       ...capabilities['browser'] && { browserName: capabilities['browser']}
