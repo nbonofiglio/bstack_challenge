@@ -22,8 +22,10 @@ For this exercise, I have chosen the following tech stack:
 
 In order to run the sample suite, a user must do the following:
 - Install Jenkins
-- Install Node.js plugin for Jenkins
-- Configure NodeJS Plugin in Jenkins Global Configuration settings to install NodeJS 19.3.0 from Nodejs.org
-- Copy Jenkins job file to create new Pipeline job in Jenkins
-- Update BrowserStack credentials ID in pipeline
+- Install NodeJS plugin for Jenkins
+- Configure NodeJS in Jenkins Global Configuration to use 19.3.0 from NodeJS.org
+- Import Jenkins file to Jenkins
+- Add BrowserStack credentials to Jenkins Credentials Provider
+- Update credentials ID in imported pipeline
 - Run Jenkins Job
+
