@@ -2,9 +2,6 @@ var username = process.env.BROWSERSTACK_USERNAME;
 var accessKey = process.env.BROWSERSTACK_ACCESS_KEY;
 var buildName = process.env.BROWSERSTACK_BUILD_NAME;
 
-// const username = 'nicholas.bonofiglio@gmail.com';
-// const accesskey = 'L247vKKyeqwMA1GfL9v6';
-
 const caps = [
   capabilities1 = {
     'bstack:options' : {
