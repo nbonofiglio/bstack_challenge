@@ -14,7 +14,7 @@ const caps = [
       "buildName" : buildName,
       "sessionName" : "Windows 10 - Firefox",
       "userName" : username,
-      "accessKey" : accesskey,
+      "accessKey" : accessKey,
     },
     "browserName": "Firefox"
   },
@@ -26,7 +26,7 @@ const caps = [
       "buildName" : buildName,
       "sessionName" : "Windows 11 - Chrome",
       "userName" : username,
-      "accessKey" : accesskey,
+      "accessKey" : accessKey,
     },
     "browserName": "Chrome"
   },
@@ -41,7 +41,7 @@ const caps = [
       networkLogs: 'true', 
       consoleLogs: 'info', 
       "userName" : username,
-      "accessKey" : accesskey,
+      "accessKey" : accessKey,
     },
     "browserName": "Chrome"
   },
@@ -53,7 +53,7 @@ const caps = [
         "buildName" : buildName,
         "sessionName" : "MacOS Ventura - Firefox",
         "userName" : username,
-        "accessKey" : accesskey,
+        "accessKey" : accessKey,
     },
     "browserName": "Firefox"
   },
@@ -65,7 +65,7 @@ const caps = [
         "buildName" : buildName,
         "sessionName" : "MacOS Ventura - Safari",
         "userName" : username,
-        "accessKey" : accesskey,
+        "accessKey" : accessKey,
     },
     "browserName": "Safari"
   }
