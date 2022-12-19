@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    tools {
+        nodejs '19.3.0'
+    }
+    stages {
+        stage('setup') {
+            steps {
+                script {
+                    if (fileExists('bstack_challenge')) {
+                        dir ('bstack_challenge') {
+                            deleteDir()
+                        }
+                    }
+                }
+                sh 'git clone https://github.com/nbonofiglio/bstack_challenge.git'
+                sh 'cd bstack_challenge'
+                sh 'npm install'
+                browserstack(credentialsId: 'd310056f-deb1-4700-9e88-2900cb498191') {
+                    sh 'node bstack_challenge/main.js'
+                }
+            }
+        }
+           
+    }
+}
+
+ // browserStackReportPublisher 'automate'
