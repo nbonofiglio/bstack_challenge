@@ -39,7 +39,7 @@ var teamSearch = async function(capabilities) {
       }
 
       // Validate correct page header
-      var text = await driver.findElement(By.css('#homepage_index > div.top-nav-languagebar-wrapper > div > span')).getText();
+      var text = await driver.findElement(webdriver.By.css('#homepage_index > div.top-nav-languagebar-wrapper > div > span')).getText();
       if (text !== "THE OFFICIAL SITE OF THE BOSTON BRUINS") {
         throw new Error("Incorrrect Home Page");
       };
